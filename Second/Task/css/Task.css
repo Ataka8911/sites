@@ -1,0 +1,1699 @@
+:root{
+    --supportblack: #282829 ;
+    --mainblack:#222222;
+    --supportgray: #38535D;
+    --supptortwhite:#D5C9BE;
+
+}
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 100;
+}
+button{
+    cursor: pointer;
+}
+@font-face {
+    font-family: Prata;
+    src: url(../shrifts/Prata-Regular.ttf);
+}
+@media (min-width:1631px){
+.hidebanner{
+    display:none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--mainblack);
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+header{
+    display: flex;
+    width: 90vi;
+    margin-left: 10vi;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+/*Hero*/
+.Hero{
+    width: 40vi;
+    
+    
+}
+.blocknav{
+    width: 100vi;
+    left: 0;
+    position: fixed;
+    padding-top: 20px;
+     background-color: var(--supportblack);
+
+}
+.HeroBanner{
+    max-width: 100%;
+    min-width: 25vi;
+}
+
+
+/*HeroNavigation*/
+
+.Heronav{
+  
+    padding-left: 8vi;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-items:center;
+}
+.Navul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Navli{
+    position: relative;
+    transition: ease-in-out 0.2s;
+    padding-right: 29px ;
+    font-size: 16px;
+    letter-spacing: 0.04;
+    line-height: 1.5;
+    font-style: italic;
+    text-transform:uppercase
+}
+.Navli:last-child{
+    padding-right: 0px;
+}
+.Navli:hover{
+    
+    font-style: normal;
+}
+.NavLogo{
+    transition: ease-in-out 0.2s;
+    font-family: Prata;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 0.03;
+    text-transform: uppercase;
+    margin-right:10% ;
+}
+/*herotex*/
+.HeroMain{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+}
+.HeroMainH{
+    min-width: 320px;
+    font-family: Prata;
+    font-size: 80px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    
+}
+
+.HeroMainP{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+.HeroMainUl{
+    margin-top: 24px;
+}
+.HeroMainli{
+    min-width: 240px;
+    position: static;
+    background-color: var(--supportblack) ;
+    display: flex;
+    margin-top: 35px ;
+    padding-right: 19px;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.HeroMainli:first-child{
+    margin-top: 0px;
+}
+.HeroMainli::before{
+    
+    left: 0;
+    content:url(../referenses/done.svg);
+
+}
+.prices{
+    font-size: 40px;
+    display: inline;
+    font-family: Prata;
+    padding-left: 0.5vi;
+    padding-right: 0.5vi;
+    
+}
+.HeroMainButton{
+    transition: ease-in 0.2s;
+    min-width: 120px;
+    width: 10vi;
+    color: #222222;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    border: 1px #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 3vi;
+}
+.HeroMainButton:hover{
+    background-color: var(--supportblack);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*Main*/
+main{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+.FirstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background:
+    url(../referenses/darkwarrior-1.jpg) left top no-repeat, 
+    url(../referenses/darkwarrior-2.jpeg) right top no-repeat;
+    background-size: 28% 100%;
+    width: 100%;
+    
+    margin-bottom: 48px;
+    
+    
+}
+.FSli{
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 40px 66px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.FSli:first-child{
+    padding-top: 0;
+    
+}
+.FSli::before{
+    margin-right: 5px;
+    content: url(../referenses/mean.svg);
+}
+.FSButton{
+    width: 40vi;
+    transition: ease-in 0.2s;
+    min-width: 120px;
+    color: #222222;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    border: 1px #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 3vi;
+}
+.FSul{
+    width: 40vi;
+}
+.SecondSection{
+    margin-top: 48px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    margin-left: 10vi;
+    margin-bottom: 8vi;
+    width: 80vi;
+    justify-content: space-between;
+    
+}
+.SSblock{
+    width: 80%;
+    padding-left: 8vi;
+    margin-bottom: 8vi;
+    display: flex;
+    flex-direction: column;
+}
+.SSH{
+    padding-top: 24px;
+    color: var(--supportgray);
+    font-family: Prata;
+    font-size: 54px;
+    line-height: 1.1;
+}
+.SSInput-1{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 45px;
+    padding-left: 10%;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+.SSInput-2{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 13px;
+    
+    
+    
+}
+.SSblock input{
+    padding-left: 10%;
+    padding-top: 24px;
+    padding-bottom: 12.5px;
+    border-radius: 4px;
+    color: var(--mainblack);
+    font-size: 24px;
+    border: 1px solid rgba(0,0,0,0.5);
+}    
+.SSblock input::placeholder{
+    font-size: 24px;
+    line-height: 1.5;
+    
+}
+.SSP{
+    
+    color: var(--mainblack);
+    
+}
+
+.SSButton{
+    width: 100%;
+    
+    background-color:var(--supportblack);
+    border: 1px solid var(--supportblack);
+    border-radius: 4px;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-transform: uppercase;
+}
+.Rectangelblock{
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+.Rectangel{
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--supportgray);
+    border-radius: 4px;
+    
+    margin-right: 8px;
+    }
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8vi;
+
+}
+.footernav{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    justify-items: center;
+    
+}
+.Footernavul{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.FooterNavli{
+    position: relative;
+        transition: ease-in-out 0.2s;
+        padding-right: 60px;
+        font-size: 16px;
+        letter-spacing: 0.04;
+        line-height: 1.5;
+        font-style: italic;
+        text-transform: uppercase;
+        padding-top: 2vi;
+        padding-bottom: 2vi;  
+}
+.FooterNavli:last-child{
+    padding-right: 0px;
+}
+.FooterNavli:hover{
+    
+    font-style: normal;
+}
+.footersection{
+    width: 100%;
+}
+.footerblock-1{
+    padding-top: 2.5vi;
+    display: flex;
+    padding-left: 8vi;
+    padding-right: 12vi;
+    justify-content: space-between;
+}
+.footersectionul{
+    display: flex;
+    
+}
+.footersectionli{
+    width: 32px;
+    height: 32px;
+    margin-right: 1.5vi;
+}
+.svgfooter{
+    width: 4vi;
+    height: 4vh;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.FooterButton{
+    min-width: 120px;
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+    padding: 32px 52px;
+    color: var(--mainblack);
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    font-style: italic;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+.FooterButton:hover{
+    background-color: var(--supportblack);
+    color: #fff;
+
+}
+.footerblock-2{
+    padding-top: 2.5vi;
+        display: flex;
+        padding-left: 8vi;
+        padding-right: 12vi;
+        justify-content: space-between;
+}
+.footerp{
+    font-size: 20px;
+    line-height: 1.5;
+}
+#p2{
+    color: var(--supptortwhite);
+
+}
+#p3{
+    color: var(--supptortwhite);
+}
+}
+@media (min-width:1281px) and (max-width:1630px){
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--mainblack);
+    min-width:1280px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+        
+        
+        
+}
+.hidebanner{
+    display: none;
+}
+header{
+    display: flex;
+    width: 90vi;
+    margin-left: 10vi;
+    flex-wrap:wrap;
+    justify-content: space-between;
+        
+}
+    /*Hero*/
+.Hero{
+    width: 40vi;
+        
+        
+}
+.blocknav{
+    width: 100vi;
+    left: 0;
+    position: fixed;
+    padding-top: 20px;
+    background-color: var(--supportblack);
+    
+}
+    .HeroBanner{
+        padding-top: 24px;
+        width: 100%;
+        height: 440px;
+    }
+    
+    
+    /*HeroNavigation*/
+    
+    .Heronav{
+      
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .Navul{
+        padding-right: 8vi;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .Navli{
+        position: relative;
+        transition: ease-in-out 0.2s;
+        padding-right: 29px ;
+        font-size: 16px;
+        letter-spacing: 0.04;
+        line-height: 1.5;
+        font-style: italic;
+        text-transform:uppercase
+    }
+    .Navli:last-child{
+        padding-right: 0px;
+    }
+    .Navli:hover{
+        
+        font-style: normal;
+    }
+    .NavLogo{
+        padding-left: 8vi;
+        transition: ease-in-out 0.2s;
+        font-family: Prata;
+        font-size: 36px;
+        line-height: 1.5;
+        letter-spacing: 0.03;
+        text-transform: uppercase;
+        margin-right:10% ;
+    }
+    /*herotex*/
+    .HeroMain{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25vh;
+        width: 90vi;
+        align-items: center;
+    }
+    .HeroMainH{
+        min-width: 320px;
+        font-family: Prata;
+        font-size: 64px;
+        line-height: 1.2;
+        letter-spacing: 0;
+        
+    }
+    
+    .HeroMainP{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0;
+    }
+    .HeroMainUl{
+        margin-top: 24px;
+    }
+    .HeroMainli{
+        min-width: 240px;
+        position: static;
+        background-color: var(--supportblack) ;
+        display: flex;
+        margin-top: 35px ;
+        padding-right: 19px;
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .HeroMainli:first-child{
+        margin-top: 0px;
+    }
+    .HeroMainli::before{
+        
+        left: 0;
+        content:url(../referenses/done.svg);
+    
+    }
+    .prices{
+        font-size: 28px;
+        display: inline;
+        font-family: Prata;
+        padding-left: 0.5vi;
+        padding-right: 0.5vi;
+        
+    }
+    .HeroMainButton{
+        transition: ease-in 0.2s;
+        min-width: 120px;
+        width: 10vi;
+        color: #222222;
+        padding: 15px;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 0.04;
+        border: 1px #fff;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 3vi;
+    }
+    .HeroMainButton:hover{
+        background-color: var(--supportblack);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    /*Main*/
+    main{
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+    }
+    .FirstSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background:none;
+        margin-bottom: 48px;
+        
+        
+    }
+    .FSli{
+        min-width: 320px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 40px 66px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .FSli:first-child{
+        padding-top: 0;
+        
+    }
+    .FSli::before{
+        margin-right: 5px;
+        content: url(../referenses/mean.svg);
+    }
+    .FSul{
+        width: 90vi;
+    }
+    .FSButton{
+        width: 40vi;
+        transition: ease-in 0.2s;
+        min-width: 120px;
+        color: #222222;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 0.04;
+        border: 1px #fff;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 3vi;
+    }
+    .SecondSection{
+        margin-top: 48px;
+        background-color: #fff;
+        border-radius: 4px;
+        display: flex;
+        margin-left: 10vi;
+        margin-bottom: 8vi;
+        width: 80vi;
+        justify-content: space-between;
+        
+    }
+    .SSblock{
+        width: 80%;
+        padding-left: 8vi;
+        display: flex;
+        margin-bottom: 8vi;
+        flex-direction: column;
+    }
+    .SSH{
+        padding-top: 24px;
+        color: var(--supportgray);
+        font-family: Prata;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+    .SSInput-1{
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 45px;
+        padding-left: 10%;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+    .SSInput-2{
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 13px;
+        
+        
+        
+    }
+    .SSblock input{
+        padding-left: 10%;
+        padding-top: 18px;
+        padding-bottom: 12.5px;
+        border-radius: 4px;
+        color: var(--mainblack);
+        font-size: 18px;
+        border: 1px solid rgba(0,0,0,0.5);
+    }    
+    .SSblock input::placeholder{
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+    .SSP{
+        
+        color: var(--mainblack);
+        
+    }
+    
+    .SSButton{
+        width: 100%;
+        background-color:var(--supportblack);
+        border: 1px solid var(--supportblack);
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 1.5;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-transform: uppercase;
+    }
+    .Rectangelblock{
+        display: flex;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    
+    }
+    .Rectangel{
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--supportgray);
+        border-radius: 4px;
+        
+        margin-right: 8px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 8vi;
+    
+    }
+    .footernav{
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        justify-items: center;
+        
+    }
+    .Footernavul{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .FooterNavli{
+        position: relative;
+            transition: ease-in-out 0.2s;
+            padding-right: 60px;
+            font-size: 16px;
+            letter-spacing: 0.04;
+            line-height: 1.5;
+            font-style: italic;
+            text-transform: uppercase;
+            padding-top: 2vi;
+            padding-bottom: 2vi;  
+    }
+    .FooterNavli:last-child{
+        padding-right: 0px;
+    }
+    .FooterNavli:hover{
+        
+        font-style: normal;
+    }
+    .footersection{
+        width: 100%;
+    }
+    .footerblock-1{
+        padding-top: 2.5vi;
+        display: flex;
+        padding-left: 8vi;
+        padding-right: 12vi;
+        justify-content: space-between;
+    }
+    .footersectionul{
+        display: flex;
+        
+    }
+    .footersectionli{
+        width: 32px;
+        height: 32px;
+        margin-right: 1.5vi;
+    }
+    .svgfooter{
+        width: 4vi;
+        height: 4vh;
+        min-width: 32px;
+        min-height: 32px;
+    }
+    
+    .FooterButton{
+        min-width: 120px;
+        font-weight: 600;
+        transition: ease-in-out 0.2s;
+        padding: 32px 52px;
+        color: var(--mainblack);
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.04;
+        font-style: italic;
+        border-radius: 4px;
+        border: 1px solid #fff;
+    }
+    .FooterButton:hover{
+        background-color: var(--supportblack);
+        color: #fff;
+    
+    }
+    .footerblock-2{
+        padding-top: 2.5vi;
+            display: flex;
+            padding-left: 8vi;
+            padding-right: 12vi;
+            justify-content: space-between;
+    }
+    .footerp{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    #p2{
+        color: var(--supptortwhite);
+    
+    }
+    #p3{
+        color: var(--supptortwhite);
+}
+}
+@media (min-width:721px) and (max-width:1280px){
+    .hidebanner{
+        display: none;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--mainblack);
+        min-width:720px;
+        font-weight: 100;
+        display: flex;
+        flex-direction: column;
+            
+            
+            
+    }
+    header{
+        display: flex;
+        width: 90vi;
+        margin-left: 10vi;
+        flex-wrap:wrap;
+        justify-content: space-between;
+            
+    }
+        /*Hero*/
+    .Hero{
+        width: 100vi;
+            
+            
+    }
+    .blocknav{
+        width: 100vi;
+        left: 0;
+        position: fixed;
+        padding-top: 20px;
+        background-color: var(--supportblack);
+        
+    }
+        .HeroBanner{
+            display: none;
+            padding-top: 24px;
+            width: 100%;
+            height: 250px;
+        }
+        
+        
+        /*HeroNavigation*/
+        
+        .Heronav{
+          
+            padding-left: 8vi;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .Navul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-right: 8vi;
+        }
+        .Navli{
+            
+            transition: ease-in-out 0.2s;
+            padding-right: 29px ;
+            font-size: 12px;
+            letter-spacing: 0.04;
+            line-height: 1.5;
+            font-style: italic;
+            text-transform:uppercase
+        }
+        .Navli:last-child{
+            padding-right: 0px;
+        }
+        .Navli:hover{
+            
+            font-style: normal;
+        }
+        .NavLogo{
+            transition: ease-in-out 0.2s;
+            font-family: Prata;
+            font-size: 27px;
+            padding-left: 8vi;
+            line-height: 1.5;
+            letter-spacing: 0.03;
+            text-transform: uppercase;
+            margin-right:10% ;
+        }
+        /*herotex*/
+        .HeroMain{
+            display: flex;
+            flex-direction: column;
+            padding-top: 25vh;
+            width: 90vi;
+            align-items: center;
+        }
+        .HeroMainH{
+            min-width: 320px;
+            font-family: Prata;
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: 0;
+            
+        }
+        
+        .HeroMainP{
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: 0;
+        }
+        .HeroMainUl{
+            margin-top: 24px;
+        }
+        .HeroMainli{
+            min-width: 240px;
+            position: static;
+            background-color: var(--supportblack) ;
+            display: flex;
+            margin-top: 35px ;
+            padding-right: 19px;
+            font-size: 16px;
+            line-height: 1.1;
+            letter-spacing: 0;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        
+        .HeroMainli:first-child{
+            margin-top: 0px;
+        }
+        .HeroMainli::before{
+            
+            left: 0;
+            content:url(../referenses/done.svg);
+        
+        }
+        .prices{
+            font-size: 24px;
+            display: inline;
+            font-family: Prata;
+            padding-left: 0.5vi;
+            padding-right: 0.5vi;
+            
+        }
+        .HeroMainButton{
+            transition: ease-in 0.2s;
+            min-width: 120px;
+            width: 10vi;
+            color: #222222;
+            padding: 15px;
+            font-size: 24px;
+            line-height: 1.5;
+            letter-spacing: 0.04;
+            border: 1px #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 3vi;
+        }
+        .HeroMainButton:hover{
+            background-color: var(--supportblack);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        /*Main*/
+        main{
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+        }
+        .FirstSection{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            background:none;
+            margin-bottom: 48px;
+            
+            
+        }
+        .FSli{
+            min-width: 320px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 40px 66px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .FSli:first-child{
+            padding-top: 0;
+            
+        }
+        .FSli::before{
+            margin-right: 5px;
+            content: url(../referenses/mean.svg);
+        }
+        .FSul{
+            width: 90vi;
+        }
+        .FSButton{
+            width: 40vi;
+            transition: ease-in 0.2s;
+            min-width: 120px;
+            color: #222222;
+            padding: 15px;
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: 0.04;
+            border: 1px #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 3vi;
+        }
+        .SecondSection{
+            margin-top: 48px;
+            background-color: #fff;
+            border-radius: 4px;
+            display: flex;
+            margin-left: 10vi;
+            margin-bottom: 8vi;
+            width: 80vi;
+            justify-content: space-between;
+            
+        }
+        .SSblock{
+            margin-bottom: 8vi;
+            width: 80%;
+            padding-left: 8vi;
+            display: flex;
+            flex-direction: column;
+        }
+        .SSH{
+            padding-top: 24px;
+            color: var(--supportgray);
+            font-family: Prata;
+            font-size: 27px;
+            line-height: 1.1;
+        }
+        .SSInput-1{
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 45px;
+            padding-left: 10%;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+        }
+        .SSInput-2{
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 13px;
+            
+            
+            
+        }
+        .SSblock input{
+            padding-left: 10%;
+            padding-top: 18px;
+            padding-bottom: 12.5px;
+            border-radius: 4px;
+            color: var(--mainblack);
+        font-size: 18px;
+            border: 1px solid rgba(0,0,0,0.5);
+        }    
+        .SSblock input::placeholder{
+            font-size: 18px;
+            line-height: 1.5;
+            
+        }
+        .SSP{
+            
+            color: var(--mainblack);
+            
+        }
+        
+        .SSButton{
+            width: 100%;
+            background-color:var(--supportblack);
+            border: 1px solid var(--supportblack);
+            border-radius: 4px;
+            font-size: 24px;
+            line-height: 1.5;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            text-transform: uppercase;
+        }
+        .Rectangelblock{
+            display: flex;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        
+        }
+        .Rectangel{
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--supportgray);
+            border-radius: 4px;
+            
+            margin-right: 8px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 8vi;
+        
+        }
+        .footernav{
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            justify-items: center;
+            
+        }
+        .Footernavul{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        .FooterNavli{
+            position: relative;
+                transition: ease-in-out 0.2s;
+                padding-right: 60px;
+                font-size: 12px;
+                letter-spacing: 0.04;
+                line-height: 1.5;
+                font-style: italic;
+                text-transform: uppercase;
+                padding-top: 2vi;
+                padding-bottom: 2vi;  
+        }
+        .FooterNavli:last-child{
+            padding-right: 0px;
+        }
+        .FooterNavli:hover{
+            
+            font-style: normal;
+        }
+        .footersection{
+            width: 100%;
+        }
+        .footerblock-1{
+            padding-top: 2.5vi;
+            display: flex;
+            padding-left: 8vi;
+            padding-right: 12vi;
+            justify-content: space-between;
+        }
+        .footersectionul{
+            display: flex;
+            
+        }
+        .footersectionli{
+            width: 32px;
+            height: 32px;
+            margin-right: 1.5vi;
+        }
+        .svgfooter{
+            width: 4vi;
+            height: 4vh;
+            min-width: 32px;
+            min-height: 32px;
+        }
+        
+        .FooterButton{
+            min-width: 120px;
+            font-weight: 600;
+            transition: ease-in-out 0.2s;
+            padding: 16px 16px;
+            color: var(--mainblack);
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: 0.04;
+            font-style: italic;
+            border-radius: 4px;
+            border: 1px solid #fff;
+        }
+        .FooterButton:hover{
+            background-color: var(--supportblack);
+            color: #fff;
+        
+        }
+        .footerblock-2{
+            padding-top: 2.5vi;
+                display: flex;
+                padding-left: 8vi;
+                padding-right: 12vi;
+                justify-content: space-between;
+        }
+        .footerp{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        #p2{
+            color: var(--supptortwhite);
+        
+        }
+        #p3{
+            color: var(--supptortwhite);
+    }
+}
+@media (min-width:320px) and (max-width:720px){
+    .Navlihide{
+        display: block;
+        font-size: 24px;
+        padding: 5px 13px;
+        text-transform: uppercase;
+
+    }
+    .Navul-2{
+        position: absolute;
+    top: 100%;
+    right:  0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    }
+    .hidebanner:hover > .Navul-2{
+        opacity: 1;
+        visibility:visible;
+        background-color: var(--supportblack);
+        z-index: 500;
+        color: #fff;
+    }
+    .hidebanner{
+        right: 0;
+        width: 64px;
+        height: 64px;
+        margin-right:8vi;
+        background-image: url(../referenses/menu-01-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #222222;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+    }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--mainblack);
+            
+            font-weight: 100;
+            display: flex;
+            flex-direction: column;
+                
+                
+                
+        }
+        header{
+            display: flex;
+            width: 110vi;
+            padding-left: 10vi;
+            
+            flex-wrap:wrap;
+            justify-content: space-between;
+                
+        }
+            /*Hero*/
+        .Hero{
+            width: 100vi;
+                
+                
+        }
+        .blocknav{
+            width: 100%;
+            left: 0;
+            position: fixed;
+            padding-top: 20px;
+            background-color: var(--supportblack);
+            
+        }
+            .HeroBanner{
+                display: none;
+                padding-top: 24px;
+                
+                width: 100%;
+                height: 250px;
+            }
+            
+            
+            /*HeroNavigation*/
+            
+            .Heronav{
+                margin-bottom: 1vh;
+                padding-left: 8vi;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items:center;
+                
+            }
+            .Navul{
+                
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .Navli{
+                display: none;
+                position: relative;
+                transition: ease-in-out 0.2s;
+                padding-right: 29px ;
+                font-size: 16px;
+                letter-spacing: 0.04;
+                line-height: 1.5;
+                font-style: italic;
+                text-transform:uppercase
+            }
+            .Navli:last-child{
+                padding-right: 0px;
+            }
+            .Navli:hover{
+                
+                font-style: normal;
+            }
+            .NavLogo{
+                transition: ease-in-out 0.2s;
+                font-family: Prata;
+                font-size: 18px;
+                line-height: 1.5;
+                letter-spacing: 0.03;
+                text-transform: uppercase;
+                margin-right:10% ;
+                
+            }
+            /*herotex*/
+            .HeroMain{
+                display: flex;
+                flex-direction: column;
+                padding-top: 25vh;
+                width: 90vi;
+                align-items: center;
+            }
+            .HeroMainH{
+                min-width: 320px;
+                font-family: Prata;
+                font-size: 32px;
+                line-height: 1.2;
+                letter-spacing: 0;
+                padding-left: 8vi;
+                
+            }
+            
+            .HeroMainP{
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: 0;
+            }
+            .HeroMainUl{
+                margin-top: 24px;
+            }
+            .HeroMainli{
+                min-width: 240px;
+                position: static;
+                background-color: var(--supportblack) ;
+                display: flex;
+                margin-top: 35px ;
+                padding-right: 19px;
+                font-size: 12px;
+                line-height: 1.1;
+                letter-spacing: 0;
+                align-items: center;
+                flex-wrap: wrap;
+                
+            }
+            
+            .HeroMainli:first-child{
+                margin-top: 0px;
+            }
+            .HeroMainli::before{
+                
+                left: 0;
+                content:url(../referenses/done.svg);
+            
+            }
+            .prices{
+                font-size: 16px;
+                display: inline;
+                font-family: Prata;
+                padding-left: 0.5vi;
+                padding-right: 0.5vi;
+                
+            }
+            .HeroMainButton{
+                transition: ease-in 0.2s;
+                min-width: 120px;
+                width: 10vi;
+                color: #222222;
+                padding: 15px;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.04;
+                border: 1px #fff;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-top: 3vi;
+            }
+            .HeroMainButton:hover{
+                background-color: var(--supportblack);
+                color: #fff;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+            /*Main*/
+            main{
+                margin-top: 48px;
+                display: flex;
+                flex-direction: column;
+            }
+            .FirstSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 10vi;
+                background:none;
+                margin-bottom: 48px;
+                
+                
+            }
+            .FSli{
+                min-width: 320px;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                line-height: 1.4;
+                padding: 40px 66px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            }
+            .FSli:first-child{
+                padding-top: 0;
+                
+            }
+            .FSli::before{
+                margin-right: 5px;
+                content: url(../referenses/mean.svg);
+            }
+            .FSul{
+                width: 90vi;
+            }
+            .FSButton{
+                width: 40vi;
+                transition: ease-in 0.2s;
+                min-width: 120px;
+                color: #222222;
+                padding: 15px;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.04;
+                border: 1px #fff;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-top: 3vi;
+            }
+            .SecondSection{
+                margin-top: 48px;
+                background-color: #fff;
+                border-radius: 4px;
+                display: flex;
+                margin-left: 5vi;
+                margin-right: 5vi;
+                margin-bottom: 8vi;
+                
+                justify-content: space-between;
+                
+            }
+            .SSblock{
+                margin-bottom: 8vi;
+                width: 80vi;
+                padding-left: 8vi;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8vh;
+            }
+            .SSH{
+                padding-top: 24px;
+                color: var(--supportgray);
+                font-family: Prata;
+                font-size: 32px;
+                line-height: 1.1;
+            }
+            .SSInput-1{
+                color: rgba(255, 255, 255, 0.5);
+                margin-top: 45px;
+                padding-left: 10%;
+                padding-top: 12.5px;
+                padding-bottom: 12.5px;
+            }
+            .SSInput-2{
+                color: rgba(255, 255, 255, 0.5);
+                margin-top: 13px;
+                
+                
+                
+            }
+            .SSblock input{
+                padding-left: 10%;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-radius: 4px;
+                color: var(--mainblack);
+            font-size: 12px;
+                border: 1px solid rgba(0,0,0,0.5);
+            }    
+            .SSblock input::placeholder{
+                font-size: 12px;
+                line-height: 1.2;
+                
+            }
+            .SSP{
+                font-size: 12px;
+                color: var(--mainblack);
+                
+            }
+            
+            .SSButton{
+                transition: ease-in-out 0.2s;
+                width: 100%;
+                background-color:var(--supportblack);
+                border: 1px solid var(--supportblack);
+                border-radius: 4px;
+                font-size: 12px;
+                line-height: 1.5;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                text-transform: uppercase;
+            }
+            .Rectangelblock{
+                display: flex;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            
+            }
+            .Rectangel{
+                width: 16px;
+                height: 16px;
+                border: 2px solid var(--supportgray);
+                border-radius: 4px;
+                
+                margin-right: 8px;
+            }
+            .footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 8vi;
+            
+            }
+            .footernav{
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                justify-items: center;
+                
+            }
+            .Footernavul{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+            }
+            .FooterNavli{
+                position: relative;
+                    transition: ease-in-out 0.2s;
+                    padding-right: 60px;
+                    font-size: 16px;
+                    letter-spacing: 0.04;
+                    line-height: 1.5;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    padding-top: 2vi;
+                    padding-bottom: 2vi;  
+            }
+            .FooterNavli:last-child{
+                padding-right: 0px;
+            }
+            .FooterNavli:hover{
+                
+                font-style: normal;
+            }
+            .footersection{
+                width: 100%;
+            }
+            .footerblock-1{
+                
+                padding-top: 2.5vi;
+                display: flex;
+                padding-left: 2vi;
+                padding-right: 2vi;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            .footersectionul{
+                display: flex;
+                
+            }
+            .footersectionli{
+                width: 32px;
+                height: 32px;
+                margin-right: 1.5vi;
+            }
+            .svgfooter{
+                width: 4vi;
+                height: 4vh;
+                min-width: 16px;
+                min-height: 16px;
+            }
+            
+            .FooterButton{
+                min-width: 60px;
+                font-weight: 600;
+                transition: ease-in-out 0.2s;
+                padding: 12px 12px;
+                color: var(--mainblack);
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.04;
+                font-style: italic;
+                border-radius: 4px;
+                border: 1px solid #fff;
+            }
+            .FooterButton:hover{
+                background-color: var(--supportblack);
+                color: #fff;
+            
+            }
+            .footerblock-2{
+                padding-top: 2.5vi;
+                    display: flex;
+                    padding-left: 2vi;
+                    padding-right: 2vi;
+                    justify-content: space-between;
+            }
+            .footerp{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            #p2{
+                color: var(--supptortwhite);
+            
+            }
+            #p3{
+                color: var(--supptortwhite);
+        }
+    }
+.SSButton:hover{
+    background-color: rgba(38, 0, 255, 0.5);
+    color: var(--mainblack);
+    color: #fff;
+
+}
+.FSButton:hover{
+    border: 1px solid #fff;
+    background-color: var(--supportblack);
+    color: #fff;
+}
