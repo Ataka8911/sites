@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .main{
     width: 100vi;
     height: 100vh;
@@ -47,4 +50,31 @@
 .mainlink:hover, .mainlink:focus{
     background-color:rgb(196, 86, 86) ;
     color: rgb(226, 193, 160);
+}
+@media (max-width:600px){
+    .mainli{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: auto;
+    }
+    .main{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainul{
+        margin: 0;
+        padding: 0;
+        height: 90%;
+        overflow: scroll;
+    }
+    .mainp{
+        margin: 0px;
+    }
+    .mainlink{
+        padding: 16px 36px;
+    }
 }
