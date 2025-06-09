@@ -1,0 +1,1205 @@
+:root{
+    --color1:  #2E2F42;
+    --color2:  #4D5AE5;
+    --color3:  #FFFFFF;
+    --color4:  #F4F4FD;
+    --color5:  rgba(64, 75, 191, 1);
+    --font1: @font-face {
+        font-family: Roboto;
+        src: url(https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+    }
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: scroll;
+    margin: 0;
+    align-self: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+/*Header and his beauty*/
+.header{
+    
+    background-color: var(--color3);
+    
+}
+
+.logo{
+    display: block;
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--color1);
+    margin-left: 156px;
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3%;
+    
+    
+    transition: transform ease-in-out 250ms;
+}
+.logo:hover, logo:focus{
+    transform: translateY(-3px) scale(1.1);
+}
+.logo-down{
+    color: var(--color3);
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3%;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding-right: 8px;
+    padding-left: 8px;  
+}
+.hidenav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid aquamarine;
+    border-color: red;
+    top: 50%;
+    left: 50%;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navlink{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+letter-spacing: 2%;
+text-transform: capitalize;
+color: #2E2F42;
+}
+.navdiv1{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navdiv2{
+    position: absolute;
+    bottom: 40px;
+    
+}
+.navdiv{
+    margin-top: 48px;
+}
+.closenav{
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--color1);
+    background-image: url(./photo/close-black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:8px;
+    cursor: pointer;
+    margin-top: 9px;
+    
+}
+.first{
+    color: var(--color2);
+}
+
+.top_nav{
+    display: flex;
+    margin: 0;
+    margin-left: 76px;
+    gap: 50px;
+}
+.top_nav_text{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: var(--color1);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    
+    
+    transition: border-bottom ease-in-out 250ms;
+    
+}
+.top_nav_element{
+    position: relative;
+}
+.bottomcolor{
+    background-color: var(--color2);
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    transform: scale(0);
+    transition: transform ease-in-out 250ms;
+}
+/* .top_nav_text:hover + bottomcolor{
+    transform: scale(5) !important;
+}
+.top_nav_text:hover,.top_nav_text:focus{
+    color: var(--color2);
+    font-family: Roboto;
+    
+} */
+ .top_nav_element:hover .bottomcolor{
+    transform: scale(1);
+} 
+.callingbox{
+    position: relative;
+    display: flex;
+    gap: 41px;
+    margin-left: auto;
+    margin-right: 8%;   
+}
+
+.calling{
+    margin-top: auto;
+    margin-bottom: auto;
+    color:var(--color1);
+    font-family: Roboto;
+    text-decoration: none;
+    transition: color ease-in-out 250ms;
+}
+.calling:hover,.calling:focus{
+    color: var(--color2);
+}
+.menu{
+    background-image: url(./photo/charm_menu-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 22px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    outline: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+/*Hero*/
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    background-color: var(--color1);
+    
+    margin-top: 5px;
+
+    overflow: hidden;
+    
+    
+}  
+.herophoto{
+    position: absolute;
+    width: 100%;
+    opacity: 0.2;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    object-fit:cover;
+}
+.herotextbox{
+    width: 496px;
+    
+    margin-top: 188px;
+    z-index: 1;
+    opacity: 1;
+   
+}
+.herotext{
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    font-family: Roboto;
+    color: var(--color3);
+    margin: 0;
+}
+
+
+.herolink{
+    margin-top: 48px;
+    margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Roboto;
+    color: var(--color3);
+    word-spacing: 1.5px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    transition:all ease-in-out 250ms;
+
+   
+}
+.herolink:hover, .herolink:focus{
+    background-color: #FFFFFF;
+    color: #4D5AE5;
+    border-radius: 4px;
+    border-color: #FFFFFF;
+}
+.Modal{
+    top: 0;
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.9);
+    
+    z-index: 2;
+    
+}
+.is-hidden{
+    display: none;
+    pointer-events: none;
+}
+.Modalbox{
+    display: flex;
+    flex-direction: column;
+    
+    
+     border-radius: 4px;
+    width: 400px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: all;
+    background-color: var(--color3);
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    
+}
+.button-close{
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--color1);
+    background-image: url(./photo/close-black.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:8px;
+    cursor: pointer;
+    margin-top: 9px;
+    opacity: 0.6;
+    
+    transition: opacity ease-in-out 250ms;
+}
+.button-close:hover, .button-close:focus{
+    opacity: 1;
+}
+.ModalP{
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 4%;
+    color: #8E8F99;
+
+    
+
+}
+.bak{
+    position: relative;
+}
+.Modaltextarea::placeholder{
+    opacity: 0;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 16px;
+    font-family: Roboto;
+    transition: opacity ease-in-out 250ms;
+}
+.ModalP2{
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 4%;
+    color: #8E8F99;
+    position: absolute;
+    left: 5px;
+    top: 24px;
+}
+.labe2{
+    position: absolute;
+    font-size: 14px;
+    font-family: Roboto;
+    left: 5px;
+    top:43px;
+    transition: color ease-in-out 250ms 250ms, transform ease-in-out 250ms;
+}
+.modalgroup:focus-within::before{
+    content: url(./photo/name2.svg) !important;
+}
+.modalgroup.phone:focus-within::before{
+    content: url(./photo/phone2.svg) !important;
+}
+.modalgroup.email:focus-within::before{
+    content: url(./photo/email2.svg) !important;
+}
+.phone::before{
+    content: url(./photo/phone.svg) !important;
+}
+.email::before{
+    content: url(./photo/email.svg) !important;
+}
+.Modaltextarea:focus +.labe2, .Modaltextarea:not(:placeholder-shown)+.labe2{
+    transform: translateY(-33px);
+    color: var(--color2);
+}
+.Modaltextarea[type=text]{
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+.Modaltextarea:focus{
+    outline: none;
+    border-color: #4D5AE5;
+}
+.Modaltextarea:focus::placeholder{
+    opacity: 1;
+    
+}
+.ModalH{
+    margin-top: 57px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+
+}
+
+.Modalinput{
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgba(46, 47, 66, 0.5);
+    border-radius: 4px;
+    
+    margin-top: 36px;
+    box-sizing: border-box;
+
+    
+}
+.Modalinput[type=text]{
+    padding-left: 32px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 16px;
+}
+.Modalinput:focus{
+    outline: none;
+    border:2px solid var(--color2);
+}
+.Modalinput:focus + .labe, .Modalinput:not(:placeholder-shown)+.labe{
+    transform: translate(-16px, -36px);
+    color: var(--color2);
+    
+} 
+.Modalinput:focus::placeholder{
+    opacity: 1;
+    color:var(--color1);
+    font-weight: 400;
+}
+
+.modalsvg use symbol path {
+    fill: yellowgreen;
+}
+.Modaltextarea{
+    border: 2px solid rgba(46, 47, 66, 0.5) ;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 36px;
+    resize: none;
+}
+
+.lic{
+    text-align: center;
+}
+.License{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #8E8F99;
+
+}
+.Licenselink{
+    text-decoration: underline;
+    color: var(--color2);
+    font-size: 14px;
+}
+.lic::before{
+    content: none;
+
+}
+.buttonsend{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    text-align: center;
+    vertical-align: middle;
+
+    margin-top: 16px;
+    padding: 16px 64px;
+    align-self: center;
+
+    background-color: var(--color2);
+    color: #FFFFFF;
+    border-color: var(--color2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+}
+.buttonsend:hover{
+    color: var(--color2);
+    background-color:var(--color4);
+}
+.modalgroup{
+    position: relative;
+}
+.labe{
+    position: absolute;
+    transition: color ease-in-out 250ms 250ms, transform ease-in-out 250ms;
+    left:40px;
+    top: 65%;
+    font-size: 14px;
+    font-family: Roboto;
+    
+}
+.modalgroup::before{
+    content: url(./photo/name.svg);
+    position: absolute;
+    top: 61%;
+    left: 16px;
+    
+}
+.Modalinput::placeholder{
+    opacity: 0;
+    position: absolute;
+    left: 32px;
+    transition: opacity ease-in-out 250ms;
+    
+}
+/*Features*/
+.features{
+    position: relative;
+    padding-top: 120px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+   
+
+}
+.featuresname{
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+.featuresbox{
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    gap: 18px;
+}
+.featureselement{
+    max-width: 264px;
+    margin-right: 24px;
+    gap: 8px;
+
+}
+.featureselement:last-child{
+    margin-right: 0;
+}
+.featurestitle{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    transition: font-size ease-in-out 250ms;
+}
+.featurestext{
+    margin: 0;
+    font-family:Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+.featuresphoto{
+    padding-left: 100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.featuresphotobox{
+    background-color: var(--color4);
+}
+/*Our Work*/
+.ourwork{
+    position: relative;
+    width: 1128px;
+    height: 412px;
+    padding-top: 120px;
+    
+}
+.ourworktitle{
+    
+    margin: 0;
+    height: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.02;
+    
+}
+.ourworkphotobox{
+    position: relative;
+    display: flex;
+    gap: 24px;
+    padding-top: 52px;
+}
+
+.ourworkphoto:hover{
+    transition: 1s;
+
+}
+/*Our Team*/
+.team{
+    position: relative;
+    background-color: var(--color4);
+    
+    margin-top: 120px;
+    padding-top: 120px;
+    
+    
+}
+.teamtitle{
+    position: relative;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02;
+    font-weight: 700;
+    text-align: center;
+    color: #2E2F42;
+    
+
+}
+.listofteam{
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* gap: 24px; */
+    
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    
+}
+.teamelement{
+    margin: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* margin-right: 24px; */
+    margin-bottom: 120px;
+    transition: box-shadow ease-in-out 250ms, transform ease-in-out 250ms;
+    padding-right: 24px;
+
+}
+.teamelement:hover{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: 1s;
+    
+    box-shadow:  0 2px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    
+    
+    
+}
+.teamelement:last-child{
+    margin-right: 0;
+}
+.teamelementbox{
+    
+    
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+    padding-top: 32px;
+    text-align: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
+    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+    
+}
+.teamname{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02;
+    font-weight: 500;
+
+}
+.teamproffesion{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.listoflinks{
+    display: flex;
+    gap: 24px;
+    text-align:start;
+    padding: 0;
+    width: 232px;
+    height: 40px;
+    opacity: 0px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    justify-self: center;
+}
+.elementoflinks{
+    position: relative;
+    background-color:var(--color2);
+    transition: ease-in 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.elementoflinks:hover{
+    background-color: var(--color5);
+    transition:ease-in 0.15s;
+}
+.svglink{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width ease-in-out 500ms;
+    
+}
+
+.photolink:hover{
+    fill: var(--color5)
+
+}
+.customers{
+    position: relative;
+    padding-top: 120px;
+    /* padding-left: 156px; */
+    padding-bottom: 120px;
+    /* width: 1128px; */
+    /* padding-right: 156px; */
+    
+    text-align: center;
+}
+.customerstitle{
+    position: relative;
+    
+top: 0;
+
+gap: 0px;
+opacity: 0px;
+font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding-bottom: 24px;
+
+
+
+}
+.customerslist{
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding-top: 24px;
+    padding-left: 0;
+    
+ 
+
+}
+.customerslistelement{
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    
+}
+
+.z{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 104px;
+    height: 56px;
+}
+/*Portfolio part*/
+/*Buttons*/
+.portfolio{
+    width: 100%;
+}
+.typesbuttons{
+    position: relative;
+    /* padding-top: 96px;
+    padding-left: 427px;
+    width: 586px; */
+    
+    
+    
+}
+.titleoftype{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    
+}
+.buttonbox{
+    display:flex ;
+    gap: 24px;
+    flex-wrap: wrap;
+    /* width: 586px; */
+}
+.button{
+    font-family: Roboto;
+    background-color:var(--color4);
+    color: var(--color2);
+    border: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
+    transition: color ease-in-out 250ms, background-color ease-in 250ms;
+
+    cursor: pointer;
+}
+.button:hover,.button:focus{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+/*Portfolio*/
+/* .portfolio{
+
+} */
+.Portfoliotitle{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+.portfoliobox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+    padding-left: 10vi;
+    padding-right: 10vi;
+    
+
+}
+.portfolioelement{
+    border: 1px solid var(--color4);
+    transition: box-shadow ease-in 250ms, transform ease-in-out 250ms;
+    max-width: 360px;
+}
+.portfolioelement:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.portfolioname{
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02;
+    color: var(--color1);
+    margin-left: 16px;
+
+}
+.portfoliotype{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: slategray;
+
+margin-left: 16px;
+}
+/*Footer*/
+.footer{
+    padding-left: 12vi;
+    padding-right: 12vi;
+    
+    position: relative;
+    
+    
+    background-color: #2E2F42;
+}
+.footerbox{
+    position: relative; 
+}
+.footerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footermainbox{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footertext{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02;
+    color: var(--color3);
+}
+.titlesecondfooter{
+    font-family: Roboto;
+    color: var(--color3);
+    width: 96px;
+    height: 24px;
+    top: 0;
+    left: 540px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0;
+}
+#list1{
+    padding-left: 0;
+    padding-top: 0;
+}
+/*Третий футер*/
+
+.Footerp{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    color: var(--color3);
+}
+.Footerinput{
+    border: 1px solid var(--color3);
+    border-radius: 4px;
+    background-color: var(--color1);
+    padding: 8px 32px;
+    margin-right: 2vw;
+
+    color: var(--color3);
+}    
+.f1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.Footerinput::placeholder{
+    font-size: 12px;
+    color: var(--color3);
+    
+}
+.Footerbutton{
+    display: inline-flex;
+    padding: 8px 24px;
+    background-color: var(--color2);
+    color: var(--color3);
+    border: 1px solid var(--color2);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    font-family: Roboto;
+    align-items: center;
+    transition: background-color ease-in-out 250ms, border-color ease-in-out 250ms 250ms;
+    cursor: pointer;
+    
+
+}
+.Footerbutton::after{
+    content: " ";
+    
+    box-sizing: content-box;
+    width: 24px;
+    height: 20px;
+    
+    padding-left: 15px;
+    background-image: url(./photo/icon_send.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.Footerbutton:hover{
+    background-color: var(--color5);
+    border-color: var(--color1);
+}
+.footerdiv{
+    display: flex;
+}
+@media (max-width:1280px){
+    .callingbox{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .logo{
+        margin: 0;
+        padding-left: 16px;
+    }
+    .top_nav{
+        margin: 0;
+    }
+    .callingbox{
+        margin: 0;
+        padding-right: 16px;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .featuresbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around
+    }
+    .featuresphotobox{
+        display: none;
+    }
+    .featurestitle{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .featureselement{
+        margin: 0;
+    }
+    .ourwork{
+        display: none;
+    }
+    .listofteam{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .customerslist{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .herotextbox{
+        margin-top: 90px;
+    }
+    .herolink{
+        margin-bottom: 60px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .Footerinput{
+        opacity: 0.6;
+        transition: opacity ease-in-out 250ms;
+    }
+    .Footerinput:focus{
+        opacity: 1;
+    }
+    .svglink.k1{
+        width: 24px;
+        height: 24px;
+    }
+    .portfoliobox{
+    /* grid-template-columns: repeat(3, 1fr); */
+     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
+     padding: 0;
+     
+    }
+    .teamelement:last-child{
+        padding-right: 24px;
+     }
+    
+}
+@media (max-width:638px){
+    .featurestext{
+        text-align: center;
+    }
+    .teamelement:last-child{
+        padding: 0;
+    }
+    .hidenav{
+        pointer-events:all;
+        opacity: 1;
+    }
+    .top_nav{
+        display: none;
+    }
+    .callingbox{
+        display: none;
+    }
+    .herotext{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .herotextbox{
+        width: 320px;
+    }
+    .featureselement{
+        max-width: none;
+        text-align: center;
+    }
+    .customerslist{
+        flex-wrap: wrap;
+    }
+    .Footerbutton{
+       margin-top: 24px;
+    }
+    .herolink{
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+    /* .teamelement{
+        margin-right: 0;
+    } */
+    .customers{
+        padding-top: 60px;
+    }
+    .z{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .menu{
+        display: initial;
+    }
+    .Modalbox{
+        width: 85%;
+        
+    }
+    .portfolioelement{
+        scale: 0.8;
+    }
+    .buttonbox{
+        gap: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .portfolio{
+        width: auto;
+    }
+}
+@media (max-width:610px){
+    .License span{
+        display: none;
+    }
+    .listofteam{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .teamelement{
+        padding-right: 0px;
+        align-items: center;
+    }
+    .teamelement img{
+        width: 100%;
+    }
+    
+    
+}
+@media (max-width:400px){
+    .z{
+        margin: 8px;
+        width: 86px;
+    }
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    
+    height: 100vh;
+    background-image: url(/изображения/street-digital-art-artwork-wallpaper-1990185d91fa4d0b06b7d83fd0f1c69d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}   
+
+header{
+    position:fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0px 5px 10px black;
+}
+.Logo{
+    font-size: 24px;
+    font-weight: 900;
+    transition:  ease-in-out 0.5s;
+}
+.Logo:hover{
+    transform: scale(1.2);
+}
+header nav ul li{
+    position: relative;
+    display: inline-block;
+    
+}
+header nav ul li a{
+    display: block;
+    padding: 20px;
+}
+header nav ul li a:hover{
+    background-color: rgb(135, 76, 190);
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+header nav ul li ul{
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100% ;
+    display: none;
+}
+header nav ul li ul li{
+    width: 100%;
+}
+header nav ul li:hover > ul{
+    display: block;
+}
+.test{
+    height: 19px;
+}

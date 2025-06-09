@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asentus</title>
+    <link rel="stylesheet" href="./second.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+        <a class="logo" href>
+            <span class="first">WEB</span>STUDIO
+        </a>
+            <ul class="top_nav">
+                <li class="top_nav_element">
+                    <a class="top_nav_text" href="./second.html" >Studio</a>
+                    <div class="bottomcolor"></div>
+                </li>
+                <li class="top_nav_element">
+                    <a class="top_nav_text" href="./portfolio.html">Portfolio</a>
+                    <div class="bottomcolor"></div>
+                </li>
+                <li class="top_nav_element">
+                    <a class="top_nav_text" href="" >Contacts</a>
+                    <div class="bottomcolor"></div>
+                </li>
+            </ul>
+        <div class="callingbox">
+            <a href="mailto:info@devstudio.com" class="calling">info@devstudio.com</a>
+            <a href="tel:+11 (000) 111-11-11" class="calling">+11 (000) 111-11-11</a>
+        </div>
+        <button type="menu" class="menu"></button>
+        </nav>
+        <nav class="hidenav is-hidden ">
+            <button type="button" class="closenav"></button>
+            <div class="navdiv1">
+                <a href="#" class="navlink" >Studio</a>
+                <a href="#" class="navlink" >Portfolio</a>
+                <a href="#" class="navlink" >Contacts</a>
+            </div>
+            <div class="navdiv2">
+                <a href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+                <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            
+                <ul class="listoflinks navdiv">
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#instagram"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#twitter"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#facebook"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="sprite.svg#linkedin"></use>
+                    </svg>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="Modal is-hidden">
+        <form class="Modalbox" action="#" method="post" autocomplete="off">
+            <button class="button-close" type="button" ></button>
+            <h2 class="ModalH">Leave your contacts and we will call you back</h2>
+            <div class="modalgroup" > 
+                <input  class="Modalinput" type="text" name="name" id="name" placeholder="Иван Иванович">
+                <label for="name" class="ModalP labe" >Name</label>
+                <!-- <div class="modallogo">
+                    <svg class="modalsvg" width="16" height="16">
+                        <use href="./photo/na" ></use>
+                    </svg>
+                </div> -->
+            </div>
+            <div class="modalgroup phone" >      
+                <input class="Modalinput " type="text" name="phone" id="phone" placeholder="+7 950 000 0000" >
+                <label for="phone" class="ModalP labe" >Phone</label>
+                <!-- <div class="modallogo">
+                    <svg class="modalsvg" width="16" height="16">
+                        <use href="./photo/modallogo.svg#phone"></use>
+                    </svg>
+                </div> -->
+            </div>   
+            <div class="modalgroup email" >           
+                <input class="Modalinput " type="text" name="email" id="email" autocomplete="off" placeholder="Ivan@mail.ru">
+                <label for="email" class="ModalP labe" >Email</label>
+                <!-- <div class="modallogo">
+                    <svg class="modalsvg" width="16" height="16">
+                        <use href="./photo/modallogo.svg#email"></use>
+                    </svg>
+                </div> -->
+            </div>      
+            <div class="bak" >
+                <textarea class="Modaltextarea" type="text" name="comment" id="comment" rows="6" placeholder="Оставьте комментарий"></textarea>
+                <label for="comment" class="ModalP2 labe2" >Comment</label>
+            </div>
+            <div class="modalgroup2 lic " >
+                <input type="checkbox" name="license" id="license">
+                <label for="license" class="License">I accept the <span>terms and conditions of the</span> <a href="#" class="Licenselink">Privacy Policy</a></label>
+
+            </div>   
+            <button class="buttonsend" type="submit">Send</button>
+        </form>
+    </div>  
+    <main>    
+        <section class="hero">
+        <img src="./photo/people-office 1.png" class="herophoto" alt="">
+        <div class="herotextbox">
+            <h2 class="herotext">Effective Solutions
+            for Your Business</h2>
+        </div>
+        <button type="button" class="herolink">Order Service</button>
+        
+        </section>
+        <section class="features">
+        
+        <ul class="featuresbox">
+            <li class="featureselement"><div class="featuresphotobox"><img class="featuresphoto"  src="./photo/antenna 1.svg" alt=""></div><h3 class="featurestitle">Strategy</h3><p class="featurestext">Our goal is to identify the business
+                problem to walk away with the perfect and creative solution. </p class="featurestext"></li>
+            <li class="featureselement"><div class="featuresphotobox"><img class="featuresphoto"  src="./photo/clock 1.svg" alt=""></div><h3 class="featurestitle">Punctuality</h3><p class="featurestext">Bring the key message to the brand's audience for the best price within the shortest possible time.</p></li>
+            <li class="featureselement"><div class="featuresphotobox"><img class="featuresphoto"  src="./photo/diagram 1.svg" alt=""></div><h3 class="featurestitle">Diligence</h3><p class="featurestext">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p></li>
+            <li class="featureselement"><div class="featuresphotobox"><img class="featuresphoto"  src="./photo/astronaut 1.svg" alt=""></div><h3 class="featurestitle">Technologies</h3><p class="featurestext">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p></li>
+        </ul>
+        <h2 class="featuresname">Features</h2>
+        </section>
+        <section class="ourwork">
+        <h2 class="ourworktitle">What Are We Doing</h2>
+        <div class="ourworkphotobox">
+            <img  class="ourworkphoto" src="photo/Rectangle 71.svg" alt="" width="360px" height="300px">
+            <img  class="ourworkphoto" src="photo/img 2.svg" alt="" width="360px" height="300px">
+            <img  class="ourworkphoto" src="photo/img 3.svg" alt="" width="360px" height="300px">
+        </div>
+        </section>
+        <section class="team">
+        <h2 class="teamtitle">Our Team</h2>
+        <ul class="listofteam">
+            <li class="teamelement">
+                <img src="photo/img.svg" alt="" >
+                <div class="teamelementbox">
+                <h3 class="teamname">Mark Guerrero</h3>
+                <p class="teamproffesion">Product Designer</p>
+                <ul class="listoflinks">
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="teamelement">
+                <img src="photo/img (1).svg" alt="" >
+                <div class="teamelementbox">
+                <h3 class="teamname">Tom Ford</h3>
+                <p class="teamproffesion">Frontend Developer</p>
+                <ul class="listoflinks">
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="teamelement">
+                <img src="photo/img (2).svg" alt="">
+                <div class="teamelementbox">
+                <h3 class="teamname">Camila Garcia</h3>
+                <p class="teamproffesion">Marketing</p>
+                <ul class="listoflinks">
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li class="teamelement">
+                <img src="photo/img (3).svg" alt="" >
+                <div class="teamelementbox">
+                <h3 class="teamname">Daniel Wilson</h3>
+                <p class="teamproffesion">UI Designer</p>
+                <ul class="listoflinks">
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="elementoflinks">
+                        <svg class="svglink" width="16" height="16">
+                            <use href="sprite.svg#linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            
+           
+        </ul>
+        </section>
+        <section class="customers"> 
+        <h2 class="customerstitle">Customers</h2>
+        <ul class="customerslist">
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco"></use>
+                </svg>
+            </li>
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco2"></use>
+                </svg>
+            </li>
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco3"></use>
+                </svg>
+            </li>
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco4"></use>
+                </svg>
+            </li>
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco5"></use>
+                </svg>
+            </li>
+            <li class="customerslistelement">
+                <svg class="z">
+                    <use href="./sprite2.svg#yaco6"></use>
+                </svg>
+            </li>
+            
+        </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footermainbox">
+            <div class="f1">
+                <div class="footerbox">
+            <a class="logo-down" href>
+                <span class="first">WEB</span>STUDIO
+            </a>
+        <p class="footertext">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
+                </div>
+                <div class="footerbox">
+            <p class="titlesecondfooter">Social media</p>
+            <ul class="listoflinks">
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#instagram"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#twitter"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="./sprite.svg#facebook"></use>
+                    </svg>
+                </li>
+                <li class="elementoflinks">
+                    <svg class="svglink k1" width="16" height="16">
+                        <use href="sprite.svg#linkedin"></use>
+                    </svg>
+                </li>
+            </ul>
+                </div>
+            </div>
+            <div class="footerbox">
+            <div>
+                <h3 class="Footerp">Subscribe</h3>
+            </div>
+            <div class="footerdiv">
+                <input class="Footerinput" type="email" placeholder="E-mail">
+                <button class="Footerbutton" type="submit">
+                    Subscribe
+                </button>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      // Находим элементы
+      const heroLink = document.querySelector('.herolink');
+      const modal = document.querySelector('.Modal.is-hidden');
+      const closeButton = document.querySelector('.button-close');
+    
+      // Проверяем, что все элементы существуют
+      if (heroLink && modal && closeButton) {
+        // Открываем модальное окно при клике на кнопку
+        heroLink.addEventListener('click', function(e) {
+          e.preventDefault(); // Предотвращаем действие по умолчанию (если это ссылка)
+          modal.classList.remove('is-hidden');
+        });
+    
+        // Закрываем модальное окно при клике на кнопку закрытия
+        closeButton.addEventListener('click', function() {
+          modal.classList.add('is-hidden');
+        });
+      } else {
+        console.error('Один из элементов не найден! Проверьте классы элементов.');
+      }
+    });
+    </script>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Находим элементы
+  const heroLink = document.querySelector('.menu');
+  const modal = document.querySelector('.hidenav.is-hidden');
+  const closeButton = document.querySelector('.closenav');
+
+  // Проверяем, что все элементы существуют
+  if (heroLink && modal && closeButton) {
+    // Открываем модальное окно при клике на кнопку
+    heroLink.addEventListener('click', function(e) {
+      e.preventDefault(); // Предотвращаем действие по умолчанию (если это ссылка)
+      modal.classList.remove('is-hidden');
+    });
+
+    // Закрываем модальное окно при клике на кнопку закрытия
+    closeButton.addEventListener('click', function() {
+      modal.classList.add('is-hidden');
+    });
+  } else {
+    console.error('Один из элементов не найден! Проверьте классы элементов.');
+  }
+});
+</script>

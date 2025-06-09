@@ -1,0 +1,40 @@
+body{
+    position: relative;
+    height: 100vh;
+}
+.scene{
+    width: 500px;
+    height: 500px;
+    background:url(./snikers/question-mark-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid black;
+    border-radius: 4px;
+    perspective: 600px;
+    opacity: 1;
+    
+}
+.box{
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.1);
+    background: url(./snikers/goida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 250ms ease-in, opacity 250ms ease-in-out;
+    
+    
+}
+
+.scene:hover .box{
+    transform: scale(1) rotateZ(36turn);
+    opacity: 1;
+}
+.scene:hover{
+    background: none;
+}
