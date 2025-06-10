@@ -1,0 +1,441 @@
+.logo{
+    display: block;
+    background-image: url(../img/лого1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    
+}
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #6B7073;
+}
+body{
+    margin: 0;
+    font-family: Calibri;
+}
+main{
+    padding-left: 5vi;
+    padding-right: 5vi;
+    padding-top: 150px;
+    overflow: hidden;
+    z-index: -1;
+}
+header{
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    color: #6B7073;
+    box-shadow: 5px 3px 6px 1px rgba(114, 114, 114, 0.3);
+    padding-right: 5vi;
+    padding-left: 5vi;
+}
+.headerhide{
+    box-shadow: none;
+}
+.mainnav{
+    display: flex;
+    gap:5vi;
+    align-items: center;
+    
+}
+.timebox{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.btnmain{
+    background-image: url(../img/меню.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    transition: background-image ease 250ms;
+}
+.btnmainsecondpos{
+    background-image: url(../img/Union.svg);
+}
+.inputmain{
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    transition: box-shadow ease-in-out 250ms;
+    box-shadow: 2px 2px 1px 3px rgba(114, 114, 114, 0.3);
+    padding-left: 16px;
+    color: #6B7073;
+
+}
+
+.inputmain:not(:placeholder-shown) + label,.inputmain:focus +label {
+    opacity: 0;
+}
+.inputmain:focus{
+    box-shadow: 2px 2px 1px 3px rgba(114, 114, 114, 0.7);
+    outline: none;
+}
+.abox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.abox:hover .linkmainbox{
+    width: 110%;
+}
+
+.linkmainbox{
+    transition: width ease-in-out 250ms;
+    width: 0;
+    height: 1px;
+    background-color:#6B7073;
+}
+.inputbox{
+    position: relative;
+}
+.inputbox::after{
+    content: url(../img/lupa.svg);
+    position: absolute;
+    transform: translate(-32px, 12px);
+    cursor: pointer;
+}
+.searchlabel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(12px);
+    padding-left: 16px;
+    pointer-events: none;
+    transition: opacity ease-in-out 250ms;
+}
+
+.hidenav{
+    padding-left: 5vi;
+    padding-right: 5vi;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border-bottom: 3px solid rgba(114, 114, 114, 0.3);
+}
+.hidenav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:24px 0px;
+    margin: 0;
+    margin-top: 88px;
+    
+}
+.hidenav .shops{
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    gap: 48px 36px;
+    padding-top: 0;
+    margin: 0;
+}
+.links{
+    border-right: 1px solid rgba(114, 114, 114, 0.3);
+    padding-right: 36px;
+    margin-top: 58px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: max-content;
+}
+.hidenav div h3{
+    padding-left: 40px;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+}
+.hidenav .Cofe{
+    margin: 0;
+}
+.hidenav .Relax{
+    margin: 0;
+}
+.hidenav .Servises{
+    margin: 0;
+}
+.is-hidden{
+    display: none;
+}
+.ArendaHero{
+    z-index: -1;
+    display: flex;
+    gap: 36px;
+}
+.ArendaHero h1{
+    
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.ArendaHeroImg{
+    background-image: url(../img/60802b546bca93a098d0a7e2fb264917fb228a7f.jpg);
+    width: 120%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.ArendaPDFDownload{
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+padding-bottom: 65px;
+padding-top: 34px;
+
+
+}
+.ArendaPDFDownload::after{
+    content: url(../img/download.svg);
+    position: absolute;
+    transform: translateX(16px);
+    cursor: pointer;
+}
+.ArendaHeroText ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 48px;
+}
+.ArendaHeroText ul li::marker{
+   color:red;
+}
+.ClientsBox{
+    display: flex;
+    gap: 36px;
+}
+.ClientsH{
+
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.ClientsImgUl{
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+.ClientsImgLi{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.l1{
+    background-image: url(../img/fiolet_familia.png);
+}
+.l2{
+    background-image: url(../img/letual.jpg);
+}
+.l3{
+    background-image: url(../img/lenta.png);
+}
+.ClientsImgButtonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ClientsTextBox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+}
+.ClientsTextLi{
+    text-align: left;
+}
+.ClientsTextLi::marker{
+    color: red;
+}
+.ClientsImgButton{
+    border: none;
+    background-image: url(../img/strelochka.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 24px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform ease-in-out 250ms;
+}
+.b2:hover{
+    transform: translateX(5px);
+}
+.b1{
+    transform: rotateZ(0.5turn);
+}
+.b1:hover{
+    transform: rotateZ(0.5turn) translate(5px);
+}
+.ClientsImgButtonBox{
+    display: flex;
+    gap: 12px;
+    
+}
+.ClientsImgButtonBox div{
+    background-image: url(../img/tochki.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 15px;
+}
+.About{
+    display: flex;
+    gap: 36px;
+    margin-top: 80px;
+
+}
+.AboutFirstImg{
+    width: 560px;
+    height: 500px;
+    background-image: url(../img/polo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.AboutSecondImg{
+    width: 860px;
+    height: 500px;
+    background-image: url(../img/shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.AboutUl{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+.AboutLi{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.AboutH{
+    font-family: Calibri;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+margin: 0;
+
+}
+.AboutP{
+    font-family: Calibri;
+font-weight: 700;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+margin: 0;
+}
+.Example{
+    display: flex;
+    gap: 30px;
+    padding-top: 60px;
+    
+}
+.ExampleImg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Ex1{
+    width: 420px;
+    height: 350px;
+    background-image: url(../img/inside.jpg);
+}
+.Ex2{
+    width: 560px;
+    height: 350px;
+    background-image: url(../img/primadonna.jpg);
+}
+.Ex3{
+    width: 720px;
+    height: 350px;
+    background-image: url(../img/whitehouse.jpg);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer{
+    padding-left: 5vi;
+    padding-right: 5vi;
+    padding-top: 90px;
+}
+.footerUl{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 32px 0px;
+}
+.footerLi{
+    font-family: Calibri;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.logo2{
+    width: 170px;
+    height: 150px;
+}
+.ssylki div{
+    padding-top: 54px;
+    display: flex;
+    gap: 36px;
+}
+.ssylki div a{
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-color: #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-position:5px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+    transition: background-color ease-in-out 250ms;
+    
+}
+.ssylki div a:hover, .ssylki div a:focus{
+    background-color: #a3a2a2;
+}
+.telega{
+    background-image: url(../img/telega.svg);
+}
+.vk{
+    background-image: url(../img/vk.svg);
+}
+.srh2{
+    top:auto;
+    color: #6B7073;
+}
