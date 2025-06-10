@@ -1,16 +1,15 @@
 
         document.addEventListener('DOMContentLoaded', function() {
-      // Находим элементы
       const heroLink = document.querySelector('.btnmain');
       const modal = document.querySelector('.hidenav');
       const btn = document.querySelector('.btnmain');
       const head = document.querySelector('.header')
     
-      // Проверяем, что все элементы существуют
+
       if (heroLink && modal && btn) {
-        // Открываем модальное окно при клике на кнопку
+       
         heroLink.addEventListener('click', function(e) {
-          e.preventDefault(); // Предотвращаем действие по умолчанию (если это ссылка)
+          e.preventDefault(); 
           modal.classList.toggle('is-hidden');
           btn.classList.toggle('btnmainsecondpos')
           head.classList.toggle('headerhide')
@@ -19,4 +18,20 @@
         console.error('Один из элементов не найден! Проверьте классы элементов.');
       }
     });
-    
+document.addEventListener('DOMContentLoaded', function() {
+  const downloadButton = document.querySelector('.ArendaPDFDownload');
+  
+  if (downloadButton) {
+    downloadButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      const link = document.createElement('a');
+      link.href = '../anketa.pdf'; 
+      link.download = 'anketa.pdf'; 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  } else {
+    console.warn('Элемент .ArendaPDFDownload не найден на странице');
+  }
+});

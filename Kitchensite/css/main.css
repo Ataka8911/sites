@@ -407,8 +407,11 @@ letter-spacing: 0%;
     width: 170px;
     height: 150px;
 }
+.ssylki .inputbox{
+    padding-bottom: 60px;
+}
 .ssylki div{
-    padding-top: 54px;
+    
     display: flex;
     gap: 36px;
 }
@@ -437,5 +440,8 @@ letter-spacing: 0%;
 }
 .srh2{
     top:auto;
+    color: #6B7073;
+}
+.contacs p{
     color: #6B7073;
 }
