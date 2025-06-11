@@ -114,6 +114,10 @@ header{
     transform: translate(-32px, 12px);
     cursor: pointer;
 }
+.inp2::after{
+    transform: translate(-16px, 12px);
+    right: 0;
+}
 .searchlabel{
     position: absolute;
     top: 0;
