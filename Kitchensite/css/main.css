@@ -31,6 +31,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: white;
+    
 }
 .header{
 
@@ -40,6 +41,7 @@ header{
     box-shadow: 5px 3px 6px 1px rgba(114, 114, 114, 0.3);
     padding-right: 5vi;
     padding-left: 5vi;
+    align-items: center;
 }
 .headerhide{
     box-shadow: none;
@@ -49,6 +51,9 @@ header{
     gap:5vi;
     align-items: center;
     
+}
+m2{
+    display: none;
 }
 .timebox{
     display: flex;
@@ -161,7 +166,7 @@ header{
     height: max-content;
 }
 .hidenav div h3{
-    padding-left: 40px;
+    
     padding-bottom: 48px;
     margin-bottom: 0;
 }
@@ -311,6 +316,7 @@ letter-spacing: 0%;
     display: flex;
     gap: 36px;
     margin-top: 80px;
+    justify-content: space-around;
 
 }
 .AboutFirstImg{
@@ -361,7 +367,7 @@ margin: 0;
     display: flex;
     gap: 30px;
     padding-top: 60px;
-    
+    justify-content: space-around;
 }
 .ExampleImg{
     background-size: cover;
@@ -386,6 +392,7 @@ margin: 0;
 footer{
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 
 }
 footer{
@@ -396,7 +403,7 @@ footer{
 .footerUl{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 150px);
     gap: 32px 0px;
 }
 .footerLi{
@@ -450,3 +457,199 @@ letter-spacing: 0%;
     color: #6B7073;
 }
 /*  */
+@media (max-width:1440px){
+    .linkmain{
+        display: none;
+    }
+    .timeofwork{
+        display: none;
+    }
+    .inputbox{
+        display: none;
+    }
+    .mainnav{
+        gap: 16px;
+    }
+    .timebox div p{
+        margin: 3px;
+    }
+    .ArendaHero{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .ArendaHeroImg{
+        height: 240px;
+    }
+    .ArendaPDFDownload{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .Clients{
+        flex-wrap: wrap;
+    }
+    .ClientsH{
+        font-size: 32px;
+    }
+    .ClientsBox{
+        flex-wrap: wrap;
+    }
+    .ClientsImgUl{
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-around;
+    }
+    .About{
+        flex-wrap: wrap-reverse;
+    }
+    .AboutFirstImg{
+        width: 60%;
+    }
+    .AboutSecondImg{
+        width: 80%;
+    }
+    .Example{
+        flex-wrap: wrap;
+    }
+    .ExampleImg{
+        width: 100%;
+    }
+    .footerUl{
+        display: none;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:1240px){
+    .hidenav div ul{
+        display: none;
+    }
+    .hidenav .shops{
+        display: none;
+    }
+    .hidenav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hidenav div h3{
+        padding-bottom: 12px;
+    }
+    .hidenav .links{
+        border: none;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+}
+@media (max-width:600px){
+    .hidenav .links{
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:850px){
+    footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .inp2 .inputmain{
+        width: 540px;
+    }
+    
+    .ssylki .m1{
+        display: none;
+    }
+    .contacs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacs p {
+        text-align: center;
+        max-width: 170px;
+    }
+    .contacs .telephon{
+        font-size: 32px;
+        max-width: none;
+        font-weight: 900;
+    }
+    .messengers.m2{
+        display: flex;
+        gap: 36px;
+        padding-bottom: 48px;
+    }
+    .messengers.m2 a {
+        display: block;
+        width: 64px;
+        height: 64px;
+        background-color: #E4E4E4;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background-position:5px;
+        background-repeat: no-repeat;
+        background-size: 48px;
+        cursor: pointer;
+        transition: background-color ease-in-out 250ms;
+    
+}
+    .ssylki div a:hover, .ssylki div a:focus{
+        background-color: #a3a2a2;
+    }
+    .telega{
+        background-image: url(../img/telega.svg);
+    }
+    .vk{
+        background-image: url(../img/vk.svg);
+    }   
+    }
+    @media (max-width:540px){
+        .inp2 .inputmain{
+            width: 280px;
+        }
+        .ssylki .inputbox{
+            padding-bottom: 32px;
+        }
+        footer{
+            padding-top: 48px;
+        }
+        .AboutSecondImg{
+            width: 100%;
+            height: 320px;
+        }
+        .AboutFirstImg{
+            width: 100%;
+            height: 270px;
+        }
+        .About{
+            justify-content: center;
+        }
+        .ClientsBox{
+            
+            justify-content: center;
+        }
+        .ClientsTextBox{
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .ClientsH{
+            text-align: center;
+            font-size: 24px;
+        }
+        .ArendaHeroText ul{
+            padding-bottom: 24px;
+        }
+        .mainnav{
+            gap: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    }
